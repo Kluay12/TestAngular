@@ -1,0 +1,33 @@
+<div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+        <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+            <div class="sidebar-brand">
+                <span>Main Menu</span>
+                <div id="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li *ngFor="let json_menu of json_menus; let i = index">
+                        <a routerLink="{{json_menu.url}}">
+                            <span>{{json_menu.name}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+
+    </main>
+    
+</div>

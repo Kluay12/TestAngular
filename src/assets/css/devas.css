@@ -1,0 +1,100 @@
+.tab-conten {
+    display: none;
+}
+
+.tab-conten.active {
+    display: block;
+}
+
+#tableGetPost thead tr th,
+.tableGetPost thead tr th,
+#tableGetPostByKeyword thead tr th,
+#tableGetReport thead tr th,
+#tableShowHasNotInboxUrl thead tr th {
+    text-align: center;
+}
+
+#tableGetPost tbody tr td,
+.tableGetPost tbody tr td,
+#tableGetPostByKeyword tbody tr td,
+#tableGetReport tbody tr td,
+#tableShowHasNotInboxUrl tbody tr td {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+#tableGetPost tbody,
+.tableGetPost tbody,
+#tableGetPostByKeyword tbody,
+#tableGetReport tbody,
+#tableShowHasNotInboxUrl tbody {
+    counter-reset: rowNumber;
+}
+
+#tableGetPost tbody tr,
+.tableGetPost tbody tr,
+#tableGetPostByKeyword tbody tr,
+#tableGetReport tbody tr,
+#tableShowHasNotInboxUrl tbody tr {
+    counter-increment: rowNumber;
+}
+
+#tableGetPost tbody tr td:first-child::before,
+.tableGetPost tbody tr td:first-child::before,
+#tableGetPostByKeyword tbody tr td:first-child::before,
+#tableGetReport tbody tr td:first-child::before, 
+#tableShowHasNotInboxUrl tbody tr td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+}
+
+#tableGetPost td button,
+.tableGetPost td button,
+#tableGetPostByKeyword td button,
+#tableGetReport td button,
+#tableShowHasNotInboxUrl td button {
+    padding: 2px 5px 2px 5px !important;
+}
+
+#tableGetPost tbody tr td:nth-child(2),
+.tableGetPost tbody tr td:nth-child(2),
+#tableGetPostByKeyword tbody tr td:nth-child(2),
+#tableGetReport tbody tr td:nth-child(2),
+#tableShowHasNotInboxUrl tbody tr td:nth-child(2) {
+    text-align: center;
+}
+
+[type="date"] {
+    width: auto;
+}
+
+#divTableGetPost,
+.divTableGetPost,
+#divTableGetPostByKeyword,
+#divFormGetPostByKeyword,
+#divTableGetReport {
+    display: none;
+}
+
+#tableFormGetPost,
+.tableFormGetPost,
+#tableFormGetPostByKeyword,
+#tableFormGetKeyword,
+#tableFormGetReport {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#tableFormGetPost td,
+.tableFormGetPost td,
+#tableFormGetPostByKeyword td,
+#tableFormGetKeyword td {
+    border: 0;
+    vertical-align: baseline;
+}
+
+label.error {
+    color: red;
+}
